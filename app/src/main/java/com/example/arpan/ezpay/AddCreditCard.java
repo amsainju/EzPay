@@ -1,25 +1,25 @@
 package com.example.arpan.ezpay;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
+import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
 
-public class AddCreditCard extends AppCompatActivity {
+public class AddCreditCard extends Fragment {
 
     private static final String TAG = "AddCreditCard";
     private TextInputEditText mDisplayDate;
@@ -30,17 +30,27 @@ public class AddCreditCard extends AppCompatActivity {
     private TextInputLayout textCreditCardExpirationDate;
     private TextInputLayout textCreditCardSaveAs;
 
+    public AddCreditCard() {
+        // Required empty public constructor
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_credit_card);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
-        textCreditCardNumber = findViewById(R.id.txtCreditCardNumber);
-        textCreditCardSecurityCode = findViewById(R.id.txtCreditCardSecurityCode);
-        textCreditCardExpirationDate = findViewById(R.id.txtCreditCardExpirationDate);
-        textCreditCardSaveAs = findViewById(R.id.txtCreditCardSaveAs);
+        getActivity().setTitle("Add Credit Card");
+        // Inflate the layout for this fragment
+        View view= inflater.inflate(R.layout.fragment_add_credit_card, container, false);
 
-        mDisplayDate = (TextInputEditText) findViewById(R.id.txtInputCreditCardExpirationDate);
+;
+
+        textCreditCardNumber = view.findViewById(R.id.txtCreditCardNumber);
+        textCreditCardSecurityCode = view.findViewById(R.id.txtCreditCardSecurityCode);
+        textCreditCardExpirationDate = view.findViewById(R.id.txtCreditCardExpirationDate);
+        textCreditCardSaveAs = view.findViewById(R.id.txtCreditCardSaveAs);
+
+        mDisplayDate = (TextInputEditText) view.findViewById(R.id.txtInputCreditCardExpirationDate);
 
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +61,7 @@ public class AddCreditCard extends AppCompatActivity {
                 int day = cal.get(Calendar.DAY_OF_MONTH);
 
                 DatePickerDialog dialog = new DatePickerDialog(
-                        AddCreditCard.this,
+                        view.getContext(),
                         android.R.style.Theme_Holo_Dialog_MinWidth,
                         mDateSetListener, year,month,day);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -69,6 +79,7 @@ public class AddCreditCard extends AppCompatActivity {
                 mDisplayDate.setText(date);
             }
         };
+        return view;
     }
 
     private boolean validateCreditCardNumber(){
@@ -125,10 +136,10 @@ public class AddCreditCard extends AppCompatActivity {
         if (!validateCreditCardNumber() | !validateCreditCardSecurityCode() | !validateCreditCardExpirationDate() | !validateCreditCardSaveAs()) {
             return;
         }
-        Toast toast1 = new Toast(getApplicationContext());
+        Toast toast1 = new Toast(getContext());
         toast1.setGravity(Gravity.CENTER_VERTICAL,0, 450);
 
-        TextView tv = new TextView(AddCreditCard.this);
+        TextView tv = new TextView(getContext());
         tv.setBackgroundColor(Color.DKGRAY);
         tv.setTextColor(Color.WHITE);
         tv.setTextSize(20);

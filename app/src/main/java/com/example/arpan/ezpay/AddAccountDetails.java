@@ -1,34 +1,83 @@
 package com.example.arpan.ezpay;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.Button;
 
-public class AddAccountDetails extends AppCompatActivity {
+public class AddAccountDetails extends Fragment {
 
     private TextInputLayout textBankName;
     private TextInputLayout textBankAccountNumber;
     private TextInputLayout textBankRoutingNumber;
     private TextInputLayout textBankSaveAs;
-
+    private Button btnSkipAddBankAccount,btnAddBankAccount;
+    public AddAccountDetails() {
+        // Required empty public constructor
+    }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_account_details);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        getActivity().setTitle("Add Bank Account");
+        // Inflate the layout for this fragment
+        View view= inflater.inflate(R.layout.fragment_add_account_details, container, false);
 
-        textBankName = findViewById(R.id.txtBankName);
-        textBankAccountNumber = findViewById(R.id.txtBankAccountNumber);
-        textBankRoutingNumber = findViewById(R.id.txtBankRoutingNumber);
-        textBankSaveAs = findViewById(R.id.txtBankSaveAs);
+        textBankName = view.findViewById(R.id.txtBankName);
+        textBankAccountNumber = view.findViewById(R.id.txtBankAccountNumber);
+        textBankRoutingNumber = view.findViewById(R.id.txtBankRoutingNumber);
+        textBankSaveAs = view.findViewById(R.id.txtBankSaveAs);
+        btnSkipAddBankAccount = view.findViewById(R.id.btnSkipAddBankAccount);
+        btnAddBankAccount = view.findViewById(R.id.btnAddBankAccount);
+        btnAddBankAccount.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
 
+
+
+
+            }
+        });
+
+        btnSkipAddBankAccount.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if(MainActivity.chkBoxCreditCard.isChecked()){
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddCreditCard()).addToBackStack(null).commit();
+                    // do something
+                }
+                else if(MainActivity.chkBoxPaypal.isChecked()){
+                   // MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddAccountDetails()).addToBackStack(null).commit();
+                    // do something
+                }
+                else if(MainActivity.chkBoxVenmo.isChecked()){
+                   // MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddAccountDetails()).addToBackStack(null).commit();
+                    // do something
+                }
+                else{
+                    //MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddOrganizationDetails()).addToBackStack(null).commit();
+
+                }
+
+            }
+        });
+        return view;
     }
 
-    private boolean validateBankName(){
+    public boolean validateBankName(){
         String bankNameInput = textBankName.getEditText().getText().toString().trim();
         if (bankNameInput.isEmpty()) {
             textBankName.setError("Field can't be empty");
@@ -39,7 +88,7 @@ public class AddAccountDetails extends AppCompatActivity {
         }
     }
 
-    private boolean validateBankAccountNumber(){
+    public boolean validateBankAccountNumber(){
         String bankAccountNumberInput = textBankAccountNumber.getEditText().getText().toString().trim();
         if (bankAccountNumberInput.isEmpty()) {
             textBankAccountNumber.setError("Field can't be empty");
@@ -53,7 +102,7 @@ public class AddAccountDetails extends AppCompatActivity {
         }
     }
 
-    private boolean validateBankRoutingNumber(){
+    public boolean validateBankRoutingNumber(){
         String bankRoutingNumberInput = textBankRoutingNumber.getEditText().getText().toString().trim();
         if (bankRoutingNumberInput.isEmpty()) {
             textBankRoutingNumber.setError("Field can't be empty");
@@ -67,7 +116,7 @@ public class AddAccountDetails extends AppCompatActivity {
         }
     }
 
-    private boolean validateBankSaveAs(){
+    public boolean validateBankSaveAs(){
         String bankSaveAsInput = textBankSaveAs.getEditText().getText().toString().trim();
         if (bankSaveAsInput.isEmpty()) {
             textBankSaveAs.setError("Field can't be empty");
@@ -82,10 +131,10 @@ public class AddAccountDetails extends AppCompatActivity {
         if (!validateBankName() | !validateBankAccountNumber() | !validateBankRoutingNumber() | !validateBankSaveAs()) {
             return;
         }
-        Toast toast1 = new Toast(getApplicationContext());
+        Toast toast1 = new Toast(v.getContext());
         toast1.setGravity(Gravity.CENTER_VERTICAL,0, 450);
 
-        TextView tv = new TextView(AddAccountDetails.this);
+        TextView tv = new TextView(v.getContext());
         tv.setBackgroundColor(Color.DKGRAY);
         tv.setTextColor(Color.WHITE);
         tv.setTextSize(20);

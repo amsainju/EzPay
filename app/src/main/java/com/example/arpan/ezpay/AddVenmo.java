@@ -19,7 +19,7 @@ public class AddVenmo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_venmo);
+        setContentView(R.layout.fragment_add_venmo);
 
         textVenmo = findViewById(R.id.txtVenmo);
         textVenmoAccount = findViewById(R.id.txtVenmoAccount);

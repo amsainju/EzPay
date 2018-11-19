@@ -19,7 +19,7 @@ public class AddPayPal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_pay_pal);
+        setContentView(R.layout.fragment_add_pay_pal);
 
         textPaypal = findViewById(R.id.txtPaypal);
         textPaypalAccount = findViewById(R.id.txtPaypalAccount);

@@ -42,6 +42,7 @@ public class QuickSetup extends Fragment  {
             {
 
                 MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddPaymentMethod()).addToBackStack(null).commit();
+
                 // do something
             }
         });
