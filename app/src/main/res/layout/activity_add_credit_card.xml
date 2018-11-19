@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddCreditCard">
+
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/txtCreditCardNumber"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColorHint="@color/lblColor"
+       app:counterEnabled="true"
+       app:counterMaxLength="16"
+       app:counterTextAppearance="@color/colorAccent"
+       app:errorEnabled="true">
+
+      <android.support.design.widget.TextInputEditText
+          android:id="@+id/txtInputCreditCardNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/mygery"
+          android:digits="1234567890"
+          android:fontFamily="sans-serif"
+          android:hint="Card Number"
+          android:inputType="number"
+          android:textColor="@color/lblColor"
+          android:textColorHint="@color/lblColor"
+          android:textSize="24sp"
+          android:typeface="sans" />
+   </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtCreditCardSecurityCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/lblColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:counterTextAppearance="@color/colorAccent"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/mygery">
+
+       <android.support.design.widget.TextInputEditText
+           android:id="@+id/txtInputCreditCardSecurityCode"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/mygery"
+           android:fontFamily="sans-serif"
+           android:hint="Security Code or CVV"
+           android:inputType="textPassword"
+           android:textColor="@color/lblColor"
+           android:textColorHint="@color/lblColor"
+           android:textSize="24sp"
+           android:typeface="sans" />
+    </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/txtCreditCardExpirationDate"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColorHint="@color/lblColor"
+       app:counterMaxLength="5"
+       app:errorEnabled="true">
+
+      <android.support.design.widget.TextInputEditText
+          android:id="@+id/txtInputCreditCardExpirationDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/mygery"
+          android:digits="1234567890/"
+          android:fontFamily="sans-serif"
+          android:hint="Expiration Date"
+          android:inputType="number"
+          android:textColor="@color/lblColor"
+          android:textColorHint="@color/lblColor"
+          android:textSize="24sp"
+          android:typeface="sans" />
+   </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/txtCreditCardSaveAs"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColorHint="@color/lblColor"
+       app:errorEnabled="true">
+
+      <android.support.design.widget.TextInputEditText
+          android:id="@+id/txtInputCreditCardSaveAs"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:backgroundTint="@color/mygery"
+          android:fontFamily="sans-serif"
+          android:hint="Save As"
+          android:inputType="textCapSentences"
+          android:textColor="@color/lblColor"
+          android:textColorHint="@color/lblColor"
+          android:textSize="24sp"
+          android:typeface="sans" />
+   </android.support.design.widget.TextInputLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <Button
+          android:id="@+id/btnAddCreditCard"
+          android:layout_width="130dp"
+          android:layout_height="60dp"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="78dp"
+          android:layout_marginTop="190dp"
+          android:layout_marginEnd="15dp"
+          android:layout_toStartOf="@+id/btnSkipAddCreditCard"
+          android:backgroundTint="@color/btnColor"
+          android:fontFamily="sans-serif"
+          android:onClick="addCreditCardInfo"
+          android:text="ADD"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:typeface="sans" />
+
+      <Button
+          android:id="@+id/btnSkipAddCreditCard"
+          android:layout_width="130dp"
+          android:layout_height="60dp"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginTop="190dp"
+          android:layout_marginEnd="25dp"
+          android:backgroundTint="@color/btnColor"
+          android:fontFamily="sans-serif"
+          android:text="SKIP"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:typeface="sans" />
+   </RelativeLayout>
+
+</LinearLayout>

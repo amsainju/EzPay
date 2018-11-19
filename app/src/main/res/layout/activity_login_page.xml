@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background= "#008577"
+    android:background= "@color/colorPrimary"
     tools:context=".login_page">
 
     <ImageView
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/ezpayicon" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtEmail"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_below="@+id/imageView"
@@ -32,15 +32,15 @@
         android:background="#FFF"
         android:textColor="#211a23"
         android:drawableLeft="@drawable/ic_action_person"
-        android:inputType="textPersonName"
-        android:hint="UserName"
+        android:hint="UserEmail"
+        android:inputType="textEmailAddress"
         android:textColorHint="#A9A9A9"/>
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txtPassword"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/txtEmail"
         android:layout_alignParentStart="true"
         android:layout_marginStart="73dp"
         android:layout_marginTop="16dp"
@@ -50,14 +50,17 @@
         android:hint="Password"
         android:textColorHint="#A9A9A9"
         android:textColor="#211a23"
+
         android:drawableLeft="@drawable/ic_action_pass"
+
         android:inputType="textPassword" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkRememberMe"
+        style="@android:style/Widget.Material.CompoundButton.CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/txtPassword"
         android:layout_alignParentStart="true"
         android:layout_marginStart="29dp"
         android:layout_marginTop="11dp"
@@ -65,38 +68,63 @@
         android:textColor="@android:color/white"
         android:textStyle="italic" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText4"
+        android:id="@+id/lblForgotPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_below="@+id/txtPassword"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@+id/checkBox"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/chkRememberMe"
         android:text="Forgot Password?"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="italic" />
 
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkRememberMe"
+        android:layout_alignStart="@+id/chkRememberMe"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="23dp"
+        android:background="@color/btnColor"
+        android:fontFamily="sans-serif-medium"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblForgotPswd"
+        android:layout_alignStart="@+id/lblForgotPswd"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toRightOf="@+id/btnLogin"
+        android:background="@color/btnColor"
+        android:fontFamily="sans-serif-medium"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+   <!--
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView1"
+        android:id="@+id/cdvLogin"
         android:layout_width="140dp"
         android:layout_height="40dp"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/chkRememberMe"
+        android:layout_alignStart="@+id/chkRememberMe"
         android:layout_marginStart="20dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="23dp"
@@ -109,7 +137,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -121,10 +149,10 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cdvSignUp"
         android:layout_width="140dp"
         android:layout_height="40dp"
-        android:layout_below="@+id/checkBox"
+        android:layout_below="@+id/chkRememberMe"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="23dp"
@@ -132,14 +160,14 @@
         app:cardBackgroundColor="#3366ff"
         app:cardCornerRadius="15dp"
         app:cardElevation="5dp"
-        android:layout_alignRight="@+id/cardView1">
+        android:layout_alignRight="@+id/cdvLogin">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/lblSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -149,11 +177,14 @@
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
+    -->
+
+
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblRegisterWith"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cardView2"
+        android:layout_below="@+id/btnSignUp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:text="Register with"
@@ -169,20 +200,20 @@
         android:id="@+id/linearLayout">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imgTwitter"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/twitter" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imgFacebook"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             app:srcCompat="@drawable/facebookicon" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imgGoogle"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

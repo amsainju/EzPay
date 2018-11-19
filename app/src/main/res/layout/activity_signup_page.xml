@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background= "@color/colorPrimary"
+tools:context=".signup_page">
+
+    <ImageView
+        android:id="@+id/imgEzpay"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        app:srcCompat="@drawable/ezpayicon" />
+
+    <TextView
+        android:id="@+id/lblFirstName"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imgEzpay"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imgEzpay"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lblFirstName"
+        android:background="#FFF"
+        android:ems="10"
+        android:textColor="#211a23"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/lblLastName"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblFirstName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Name:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lblLastName"
+        android:background="#FFF"
+        android:ems="10"
+        android:textColor="#211a23"
+        android:textSize="18dp"  />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblLastName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Email Address:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtLastName"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lblEmail"
+        android:background="#FFF"
+        android:ems="10"
+        android:textColor="#211a23"
+        android:textSize="18dp"  />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Password:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lblPassword"
+        android:background="#FFF"
+        android:ems="10"
+        android:textColor="#211a23"
+        android:textSize="18dp"
+        android:hint="Password"
+        android:textColorHint="#A9A9A9"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lblConfirmPswd"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Password:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtConfirmPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lblConfirmPswd"
+        android:background="#FFF"
+        android:ems="10"
+        android:textColor="#211a23"
+        android:textSize="18dp"
+        android:hint="Confirm Password"
+        android:textColorHint="#A9A9A9"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btnRegisterUser"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtConfirmPswd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/btnColor"
+        android:fontFamily="sans-serif-medium"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCancelRegister"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtConfirmPswd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toRightOf="@+id/btnRegisterUser"
+        android:background="@color/btnColor"
+        android:fontFamily="sans-serif-medium"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
