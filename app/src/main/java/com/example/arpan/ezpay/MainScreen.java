@@ -23,7 +23,11 @@ public class MainScreen extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_screen, container, false);
+        getActivity().setTitle("EzPay");
+        View view = inflater.inflate(R.layout.fragment_main_screen, container, false);
+        return view;
     }
+
+
 
 }

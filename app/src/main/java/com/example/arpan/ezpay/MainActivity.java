@@ -18,7 +18,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    public static FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
 
         if(savedInstanceState== null){
             MainScreen ms = new MainScreen();
-            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment_container,ms).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
@@ -95,13 +95,13 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             setTitle("EzPay");
             MainScreen ms = new MainScreen();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragment_container,ms).commit();
+            fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment_container,ms).addToBackStack(null).commit();
         } else if (id == R.id.nav_quick_setup) {
-            setTitle("Payment Methods");
-            AddPaymentMethod apm = new AddPaymentMethod();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragment_container,apm).commit();
+            setTitle("QuickSetup");
+            QuickSetup qs = new QuickSetup();
+            fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment_container,qs).addToBackStack(null).commit();
         } else if (id == R.id.nav_organization) {
 
         } else if (id == R.id.nav_payment) {
