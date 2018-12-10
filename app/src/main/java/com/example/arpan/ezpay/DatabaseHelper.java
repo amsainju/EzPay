@@ -7,6 +7,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region Class Variables
@@ -34,6 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region PaymentMethodTable Columns
     public static final String PMID = "ID";
+    public static final String BankName = "BankName";
     public static final String PMType = "PaymentType";
     public static final String PMSaveAsName = "SaveAsName";
     //----For Back Accounts----//
@@ -57,6 +62,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String OrgType = "OrganizationType";
     public static final String OrgName = "OrganizationName";
     public static final String OrgAutoPayment = "IsAutoPayment";
+    public static final String OrgPreferredPaymentMethod = "PreferredPaymentMethod";
     //---For Water and Electricity---//
     public static final String OrgAccNum = "AccountNumber";
     public static final String OrgCusNum= "CustomerNumber";
@@ -67,15 +73,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // region CurrentBillsTable Columns
     public static final String CBID = "ID";
-    public static final String CB_UID = "UID";
+    public static final String CB_OrgType = "OrgType";
     //----PMID, Amount, PaymentDate, Status to show Paid Bills-----//
-    public static final String CB_PMID = "PMID";
+    public static final String CB_PMSaveAsName = "PMSaveAsName";   //corrosponds PMSaveAsName
     public static final String CB_Amt = "Amount";
-    public static final String CD_DueDate = "DueDate";
-    public static final String CD_PMDate = "PaymentDate";
-    public static final String CD_LastReading = "LastReading";
+    public static final String CB_DueDate = "DueDate";
+    public static final String CB_PMDate = "PaymentDate";
+    public static final String CB_LastReading = "LastReading";
     public static final String CB_CurReading = "CurrentReading";
-    public static final String CD_IsPaid = "IsPaid";
+    public static final String CB_IsPaid = "IsPaid";
     //endregion CurrentBillsTable Columns
 
     //endregion Class Variables
@@ -109,29 +115,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region CreateTables
     public void createUserTable(SQLiteDatabase db) {
-        createTable = "CREATE TABLE " + TBLPaymentMethod + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ FirstName +" TEXT, "+ LastName +" TEXT, "+ Email +" TEXT, "
+        createTable = "CREATE TABLE " + TBLUser + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ FirstName +" TEXT, "+ LastName +" TEXT, "+ Email +" TEXT, "
                 + Password +" TEXT, "+ RememberMe +" TEXT)";
         db.execSQL(createTable);
     }
     public void createPaymentMethodTable(SQLiteDatabase db) {
-        createTable = "CREATE TABLE " + TBLUser + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ PMType +" TEXT, "+ PMSaveAsName +" TEXT, "+ PMRoutingNum +" TEXT, "+ PMAccNum +" TEXT, "
+        createTable = "CREATE TABLE " + TBLPaymentMethod + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ PMType +" TEXT, "+ BankName +" TEXT, "+ PMSaveAsName +" TEXT, "+ PMRoutingNum +" TEXT, "+ PMAccNum +" TEXT, "
                 + PMNameOnCard +" TEXT, "+ PMCardNum +" TEXT, "+ PMExpiryDate +" TEXT, "+ PMSecNum +" TEXT, "+ PMUserName +" TEXT, "+ PMPass +" TEXT)";
         db.execSQL(createTable);
     }
     public void createOrganizationTable(SQLiteDatabase db) {
         createTable = "CREATE TABLE " + TBLOrganization + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + OrgType + " TEXT, " + OrgName + " TEXT, " + OrgAutoPayment + " TEXT, "
-                + OrgAccNum + " TEXT, " + OrgCusNum + " TEXT, " + OrgUserEmail + " TEXT, " + OrgPass + " TEXT)";
+               + OrgPreferredPaymentMethod + " TEXT, "+ OrgAccNum + " TEXT, " + OrgCusNum + " TEXT, " + OrgUserEmail + " TEXT, " + OrgPass + " TEXT)";
         db.execSQL(createTable);
     }
 
     public void createCurrentBillsTable(SQLiteDatabase db) {
-        createTable = "CREATE TABLE " + TBLCurrentBills + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ CB_UID +" INTEGER, "+ CB_PMID +" INTEGER, "+ CB_Amt +" TEXT, "
-                + CD_DueDate +" TEXT, "+ CD_PMDate +" TEXT, "+ CD_LastReading +" TEXT, "+ CB_CurReading +" TEXT, "+ CD_IsPaid +" TEXT)";
+        createTable = "CREATE TABLE " + TBLCurrentBills + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, "+ CB_OrgType +" INTEGER, "+ CB_PMSaveAsName +" INTEGER, "+ CB_Amt +" TEXT, "
+                + CB_DueDate +" TEXT, "+ CB_PMDate +" TEXT, "+ CB_LastReading +" TEXT, "+ CB_CurReading +" TEXT, "+ CB_IsPaid +" TEXT)";
         db.execSQL(createTable);
     }
     //endregion CreateTables
 
     //region UserData
+    //add Bank Account
     public boolean addData(String fname, String lname, String email, String pass) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -185,10 +192,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region PaymentMethodData
 
-    public boolean addPaymentMethod(String pmType, String pmSaveAsName, String pmRoutingNum, String pmAccNum, String pmNameOnCard, String pmCardNum, String pmExpiryDate, String pmSecNum, String pmUserName, String pmPass) {
+    public boolean addPaymentMethod(String pmType, String bName, String pmSaveAsName, String pmRoutingNum, String pmAccNum, String pmNameOnCard, String pmCardNum, String pmExpiryDate, String pmSecNum, String pmUserName, String pmPass) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PMType, pmType);
+        contentValues.put(BankName,bName);
         contentValues.put(PMSaveAsName, pmSaveAsName);
         contentValues.put(PMRoutingNum, pmRoutingNum);
         contentValues.put(PMAccNum, pmAccNum);
@@ -198,7 +206,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PMSecNum, pmSecNum);
         contentValues.put(PMUserName, pmUserName);
         contentValues.put(PMPass, pmPass);
-        Log.d(TAG, "addData: Adding " + pmType +", "+ pmSaveAsName+","+ pmRoutingNum+", "+ pmAccNum+","+ pmNameOnCard+", "+ pmCardNum+","+ pmExpiryDate
+        Log.d(TAG, "addData: Adding " + pmType +","+ BankName +","+ pmSaveAsName+","+ pmRoutingNum+", "+ pmAccNum+","+ pmNameOnCard+", "+ pmCardNum+","+ pmExpiryDate
                 +", "+ pmSecNum+","+ pmUserName+" and"+pmPass+ " to " + TBLPaymentMethod);
 
         long result = db.insert(TBLPaymentMethod, null, contentValues);
@@ -253,7 +261,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Cursor getPaymentMethodList(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TBLPaymentMethod;
+        String query = "SELECT * FROM " + TBLPaymentMethod + " ORDER BY ID ASC";
         Cursor data = db.rawQuery(query, null);
         return data;
     }
@@ -269,7 +277,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region OrganizationData
 
-    public boolean addOrganization(String orgType, String orgName, String orgAutoPayment, String orgAccNum, String orgCusNum, String orgUserEmail, String orgPass) {
+    public boolean addOrganization(String orgType, String orgName, String orgAutoPayment, String orgPPayment, String orgAccNum, String orgCusNum, String orgUserEmail, String orgPass) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(OrgType, orgType);
@@ -279,8 +287,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(OrgCusNum, orgCusNum);
         contentValues.put(OrgUserEmail, orgUserEmail);
         contentValues.put(OrgPass, orgPass);
-
-        Log.d(TAG, "addData: Adding " + orgType +", "+ orgName+","+ orgAutoPayment+","+ orgAccNum+","+ orgCusNum+","+ orgUserEmail+" and "+orgPass+ " to " + TBLOrganization);
+        contentValues.put(OrgPreferredPaymentMethod, orgPPayment);
+        Log.d(TAG, "addData: Adding " + orgType +", "+ orgName+","+ orgAutoPayment+","+","+ orgPPayment+","+ orgAccNum+","+ orgCusNum+","+ orgUserEmail+" and "+orgPass+ " to " + TBLOrganization);
 
         long result = db.insert(TBLOrganization, null, contentValues);
 
@@ -347,7 +355,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //region BillsData
     public Cursor getCurrentBills(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TBLCurrentBills;
+        String query = "SELECT * FROM " + TBLCurrentBills+ " WHERE "+ DatabaseHelper.CB_IsPaid+ " = 'No' ORDER BY "+DatabaseHelper.CB_DueDate+" DESC";
         Cursor data = db.rawQuery(query, null);
         return data;
     }
@@ -359,10 +367,93 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     public Cursor getPaidBills(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TBLCurrentBills+ " WHERE "+ DatabaseHelper.CD_IsPaid+ " = ?";
-        Cursor data = db.rawQuery(query, new String[]{"Yes"});
+        String query = "SELECT * FROM " + TBLCurrentBills+ " WHERE "+ DatabaseHelper.CB_IsPaid+ " = 'Yes' ORDER BY "+DatabaseHelper.CB_PMDate+" ASC";
+        Cursor data = db.rawQuery(query, null);
         return data;
     }
+
+    public boolean addCurrentBills(String cbOrgType, String cbPMSaveAsName, String cbAmt, String cbDueDate, String cbPMDate, String cbLastReading, String cbCurrReading, String cbIsPaid) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(CB_OrgType, cbOrgType);
+        contentValues.put(CB_PMSaveAsName,cbPMSaveAsName);
+        contentValues.put(CB_Amt, cbAmt);
+        contentValues.put(CB_DueDate, cbDueDate);
+        contentValues.put(CB_PMDate, cbPMDate);
+        contentValues.put(CB_LastReading, cbLastReading);
+        contentValues.put(CB_CurReading, cbCurrReading);
+        contentValues.put(CB_IsPaid, cbIsPaid);
+        Log.d(TAG, "addData: Adding " + cbOrgType +","+ cbPMSaveAsName+","+ cbAmt+", "+ cbDueDate+","+ cbPMDate+", "+ cbLastReading+","+ cbCurrReading
+                +", "+ cbIsPaid);
+
+        long result = db.insert(TBLCurrentBills, null, contentValues);
+
+        //if date as inserted incorrectly it will return -1
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public boolean updateCurrentBilsById(String cbId) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        Date c = Calendar.getInstance().getTime();
+        SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+        String formattedDate = df.format(c);
+
+        //contentValues.put(FirstName, fname);
+        //contentValues.put(LastName, lname);
+        //contentValues.put(Email, email);
+        //contentValues.put(Password, pass);
+        contentValues.put(CB_IsPaid, "Yes");
+        contentValues.put(CB_PMDate, formattedDate.toString());
+
+        Log.d(TAG, "updateData: Updating "+CB_IsPaid+ " to " + TBLCurrentBills);
+
+        long result = db.update(TBLCurrentBills,contentValues,DatabaseHelper.CBID + "=?" , new String[]{cbId});
+
+        //if date as inserted incorrectly it will return -1
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public boolean updateCurrentBils() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        //contentValues.put(FirstName, fname);
+        //contentValues.put(LastName, lname);
+        //contentValues.put(Email, email);
+        //contentValues.put(Password, pass);
+        contentValues.put(CB_IsPaid, "Yes");
+
+        Log.d(TAG, "updateData: Updating "+CB_IsPaid+ " to " + TBLCurrentBills);
+
+        long result = db.update(TBLCurrentBills,contentValues,DatabaseHelper.CB_IsPaid + "='No'" ,null);
+
+        //if date as inserted incorrectly it will return -1
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public void clearTable(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from "+ TBLPaymentMethod);
+        db.execSQL("delete from "+ TBLOrganization);
+        db.execSQL("delete from "+ TBLCurrentBills);
+       // db.execSQL("delete from "+ TBLUser);
+        //TBLUser
+    }
+
+    //updateCurrentBilsForAutoPay
+
     //endregion BillsData
+
 
 }

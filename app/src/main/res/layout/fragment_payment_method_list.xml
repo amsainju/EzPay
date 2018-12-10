@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pmt_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethodList">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lvPayment"/>
+
+    <Button
+        android:id="@+id/btnAdNewPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/btnColor"
+        android:gravity="center"
+
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:text="Add New Payment Method"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -25,11 +25,6 @@
         <activity
             android:name=".signup_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".AddAccountDetails"
-            android:label="Add Account Details"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".QuickSetup"></activity>
     </application>
 
 </manifest>

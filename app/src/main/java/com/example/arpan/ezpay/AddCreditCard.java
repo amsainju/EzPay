@@ -1,6 +1,9 @@
 package com.example.arpan.ezpay;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.TextInputEditText;
@@ -13,6 +16,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,11 +29,13 @@ public class AddCreditCard extends Fragment {
     private TextInputEditText mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
-    private TextInputLayout textCreditCardNumber;
+    private TextInputLayout textCreditCardNumber,textNameOnCreditCard;
     private TextInputLayout textCreditCardSecurityCode;
     private TextInputLayout textCreditCardExpirationDate;
     private TextInputLayout textCreditCardSaveAs;
-
+    private Button  btnAddCreditCard, btnSkipAddCreditCard;
+    DatabaseHelper databaseHelper;
+    SQLiteDatabase db;
     public AddCreditCard() {
         // Required empty public constructor
     }
@@ -44,7 +50,7 @@ public class AddCreditCard extends Fragment {
         View view= inflater.inflate(R.layout.fragment_add_credit_card, container, false);
 
 ;
-
+        textNameOnCreditCard = view.findViewById(R.id.txtNameOnCreditCard);
         textCreditCardNumber = view.findViewById(R.id.txtCreditCardNumber);
         textCreditCardSecurityCode = view.findViewById(R.id.txtCreditCardSecurityCode);
         textCreditCardExpirationDate = view.findViewById(R.id.txtCreditCardExpirationDate);
@@ -79,9 +85,114 @@ public class AddCreditCard extends Fragment {
                 mDisplayDate.setText(date);
             }
         };
+        databaseHelper=new DatabaseHelper(getContext());
+        db = databaseHelper.getReadableDatabase();
+        btnAddCreditCard = view.findViewById(R.id.btnAddCreditCard);
+        btnSkipAddCreditCard = view.findViewById(R.id.btnSkipAddCreditCard);
+        btnAddCreditCard.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (!validateNameOnCreditCard() | !validateCreditCardNumber() | !validateCreditCardSecurityCode() | !validateCreditCardExpirationDate() | !validateCreditCardSaveAs()) {
+                    return;
+                }
+                String nameOnCreditCard = textNameOnCreditCard.getEditText().getText().toString().trim();
+                String cardNumber =textCreditCardNumber.getEditText().getText().toString().trim();
+                String  secirityCode= textCreditCardSecurityCode.getEditText().getText().toString().trim();
+                String expirtDate = textCreditCardExpirationDate.getEditText().getText().toString().trim();
+                String alias = textCreditCardSaveAs.getEditText().getText().toString().trim();
+                MainActivity.chkBoxCreditCard.setChecked(false);
+                boolean insertData = databaseHelper.addPaymentMethod("CreditCard", null,alias,null,null,nameOnCreditCard,cardNumber,expirtDate,secirityCode,null,null);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(v.getContext());
+                alertDialogBuilder.setMessage("Do you want to add Another Credit Card Account?")
+                        .setCancelable(false)
+                        .setPositiveButton("Add Another", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddCreditCard()).addToBackStack(null).commit();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                if(MainActivity.chkBoxPaypal.isChecked()){
+                                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddPayPal()).addToBackStack(null).commit();
+                                    // do something
+                                }
+                                else if(MainActivity.chkBoxVenmo.isChecked()){
+                                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddVenmo()).addToBackStack(null).commit();
+                                    // do something
+                                }
+                                else{
+                                    if(MainActivity.chkAddOrganization) {
+                                        MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new AddOrganizations()).addToBackStack(null).commit();
+                                    }
+                                    else if(MainActivity.chkListPaymentMethod){
+                                        MainActivity.chkBoxBank.setChecked(false);
+                                        MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new PaymentMethodList()).addToBackStack(null).commit();
+                                    }
+                                    else{
+                                        MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new CurrentBillsList()).addToBackStack(null).commit();
+
+                                    }
+                                }
+                            }
+                        });
+                AlertDialog alert = alertDialogBuilder.create();
+                alert.setTitle(alias + " Sucessfully Added!");
+                alert.show();
+
+
+
+
+            }
+        });
+
+        btnSkipAddCreditCard.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                MainActivity.chkBoxCreditCard.setChecked(false);
+                 if(MainActivity.chkBoxPaypal.isChecked()){
+                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddPayPal()).addToBackStack(null).commit();
+                    // do something
+                }
+                else if(MainActivity.chkBoxVenmo.isChecked()){
+                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddVenmo()).addToBackStack(null).commit();
+                    // do something
+                }
+                else{
+                     if(MainActivity.chkAddOrganization) {
+                         MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new AddOrganizations()).addToBackStack(null).commit();
+                     }
+                     else if(MainActivity.chkListPaymentMethod){
+                         MainActivity.chkListPaymentMethod =false;
+                         MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new PaymentMethodList()).addToBackStack(null).commit();
+                     }
+                     else{
+                         MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new CurrentBillsList()).addToBackStack(null).commit();
+
+                     }
+
+                 }
+
+            }
+        });
         return view;
     }
 
+    private boolean validateNameOnCreditCard(){
+        String bankNameInput = textNameOnCreditCard.getEditText().getText().toString().trim();
+        if (bankNameInput.isEmpty()) {
+            textNameOnCreditCard.setError("Field can't be empty");
+            return false;
+        } else {
+            textNameOnCreditCard.setError(null);
+            return true;
+        }
+    }
     private boolean validateCreditCardNumber(){
         String creditCardNumberInput = textCreditCardNumber.getEditText().getText().toString().trim();
         if (creditCardNumberInput.isEmpty()) {

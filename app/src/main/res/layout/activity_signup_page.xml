@@ -18,7 +18,7 @@ tools:context=".signup_page">
 
     <TextView
         android:id="@+id/lblFirstName"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_below="@+id/imgEzpay"
         android:layout_alignParentStart="true"
@@ -26,11 +26,11 @@ tools:context=".signup_page">
         android:layout_marginTop="20dp"
         android:text="First Name:"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtFirstName"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/imgEzpay"
         android:layout_marginLeft="2dp"
@@ -44,7 +44,7 @@ tools:context=".signup_page">
 
     <TextView
         android:id="@+id/lblLastName"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_below="@+id/lblFirstName"
         android:layout_alignParentStart="true"
@@ -52,11 +52,11 @@ tools:context=".signup_page">
         android:layout_marginTop="20dp"
         android:text="Last Name:"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtLastName"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/txtFirstName"
         android:layout_marginLeft="2dp"
@@ -69,7 +69,7 @@ tools:context=".signup_page">
 
     <TextView
         android:id="@+id/lblEmail"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_below="@+id/lblLastName"
         android:layout_alignParentStart="true"
@@ -77,11 +77,11 @@ tools:context=".signup_page">
         android:layout_marginTop="20dp"
         android:text="Email Address:"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/txtLastName"
         android:layout_marginLeft="2dp"
@@ -94,7 +94,7 @@ tools:context=".signup_page">
 
     <TextView
         android:id="@+id/lblPassword"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_below="@+id/lblEmail"
         android:layout_alignParentStart="true"
@@ -102,11 +102,11 @@ tools:context=".signup_page">
         android:layout_marginTop="20dp"
         android:text="Password:"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/txtEmail"
         android:layout_marginLeft="2dp"
@@ -123,7 +123,7 @@ tools:context=".signup_page">
 
     <TextView
         android:id="@+id/lblConfirmPswd"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_below="@+id/lblPassword"
         android:layout_alignParentStart="true"
@@ -131,11 +131,11 @@ tools:context=".signup_page">
         android:layout_marginTop="20dp"
         android:text="Confirm Password:"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtConfirmPswd"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/txtPassword"
         android:layout_marginLeft="2dp"
@@ -153,38 +153,32 @@ tools:context=".signup_page">
 
     <Button
         android:id="@+id/btnRegisterUser"
-        android:layout_width="134dp"
+        android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/txtConfirmPswd"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="23dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="88dp"
         android:background="@color/btnColor"
         android:fontFamily="sans-serif-medium"
         android:text="Register"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnCancelRegister"
-        android:layout_width="118dp"
+        android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/txtConfirmPswd"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="97dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="88dp"
         android:layout_toRightOf="@+id/btnRegisterUser"
         android:background="@color/btnColor"
         android:fontFamily="sans-serif-medium"
         android:text="Cancel"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

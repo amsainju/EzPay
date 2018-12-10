@@ -1,0 +1,48 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:descendantFocusability="blocksDescendants">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_weight="20"
+    android:weightSum="100">
+    <TextView
+    android:gravity="center"
+    android:text="TextView2"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/txtId"
+    android:visibility="gone"
+    android:layout_weight="90"/>
+
+    <TextView
+    android:gravity="center"
+    android:textAlignment="center"
+    android:text="TextView1"
+        android:textColor="@color/lblColor"
+        android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/txtOrgList"
+    android:layout_weight="10"/>
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgbtnDel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="80"
+        android:gravity="center"
+        android:background="#ffffff"
+
+        app:srcCompat="@android:drawable/ic_delete" />
+
+</LinearLayout>

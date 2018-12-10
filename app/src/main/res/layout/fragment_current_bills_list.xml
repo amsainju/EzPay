@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cb_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CurrentBillsList">
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/lvCurrentBills"/>
+
+    <Button
+        android:id="@+id/btnPayAll"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="99dp"
+        android:background="@color/btnColor"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:text="Pay All"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="128dp"
+        android:text="No Impending Bills"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <!--    <Button
+            android:id="@+id/btnEnrollAutoPay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="88dp"
+
+            android:background="@color/btnColor"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:text="Enroll In AutoPay"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />-->
+
+</RelativeLayout>

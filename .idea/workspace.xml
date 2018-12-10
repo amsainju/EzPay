@@ -14,7 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c08eb8-5471-4f7c-939d-3563d96c9ab3" name="Default" comment="content main added">
+    <list default="true" id="e1c08eb8-5471-4f7c-939d-3563d96c9ab3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java" afterDir="false" />
@@ -32,11 +35,21 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_account_details.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_credit_card.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_pay_pal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_venmo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/login_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/login_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_pay_pal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_pay_pal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_venmo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_venmo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_quick_setup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_quick_setup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,162 +72,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddPaymentMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="49" column="11" selection-start-line="38" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
+            <state relative-caret-position="17">
+              <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1473#1877#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1929#2287#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddAccountDetails.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1646#2809#0" expanded="true" />
-                <element signature="e#2808#2809#0" expanded="true" />
-                <element signature="e#2870#4031#0" expanded="true" />
-                <element signature="e#4030#4031#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_add_credit_card.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="133" column="38" lean-forward="true" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
-            </state>
-          </provider>
+      <file leaf-file-name="app_bar_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddCreditCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_add_account_details.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="2176">
-              <caret line="128" column="50" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="50" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_add_payment_method.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-416">
-              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
+      <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickSetup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#982#1302#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-              </folding>
-            </state>
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="366" lean-forward="true" selection-start-line="366" selection-end-line="366" />
+            <state relative-caret-position="1326">
+              <caret line="449" column="9" selection-start-line="449" selection-start-column="9" selection-end-line="449" selection-end-column="9" />
               <folding>
-                <element signature="e#318#342#0" />
-                <element signature="e#526#541#0" />
-                <element signature="e#828#854#0" />
-                <element signature="e#1206#1241#0" />
-                <element signature="e#2023#2057#0" />
-                <element signature="e#2640#2675#0" />
-                <element signature="e#3310#3330#0" />
-                <element signature="e#3310#3459#0" />
-                <element signature="e#3493#3508#0" />
-                <element signature="e#3493#4122#0" />
-                <element signature="e#4128#4326#0" />
-                <element signature="e#4356#4377#0" />
-                <element signature="e#4356#4693#0" />
-                <element signature="e#4698#5129#0" />
-                <element signature="e#5134#5516#0" />
-                <element signature="e#5522#5919#0" />
-                <element signature="e#5954#5971#0" />
-                <element signature="e#5954#6728#0" />
-                <element signature="e#6734#7558#0" />
-                <element signature="e#6937#6975#0" />
-                <element signature="e#7564#7774#0" />
-                <element signature="e#7806#7832#0" />
-                <element signature="e#7838#9160#0" />
-                <element signature="e#9166#10550#0" />
-                <element signature="e#10556#11063#0" />
-                <element signature="e#11069#11297#0" />
-                <element signature="e#11303#11600#0" />
-                <element signature="e#11641#11666#0" />
-                <element signature="e#11672#12715#0" />
-                <element signature="e#12721#13826#0" />
-                <element signature="e#13832#14344#0" />
-                <element signature="e#14351#14577#0" />
-                <element signature="e#14583#14880#0" />
-                <element signature="e#14919#14937#0" />
-                <element signature="e#14919#15164#0" />
-                <element signature="e#15169#15460#0" />
-                <element signature="e#15465#15744#0" />
+                <element signature="e#914#940#0" />
+                <element signature="e#1292#1327#0" />
+                <element signature="e#2163#2197#0" />
+                <element signature="e#2865#2900#0" />
+                <element signature="e#3588#3608#0" />
+                <element signature="e#3588#3737#0" />
+                <element signature="e#3771#3786#0" />
+                <element signature="e#3771#4400#0" />
+                <element signature="e#4406#4604#0" />
+                <element signature="e#4634#4962#0" />
+                <element signature="e#4967#5428#0" />
+                <element signature="e#5433#5853#0" />
+                <element signature="e#5859#6268#0" />
+                <element signature="e#6303#6320#0" />
+                <element signature="e#6303#7100#0" />
+                <element signature="e#7106#7930#0" />
+                <element signature="e#7309#7347#0" />
+                <element signature="e#7936#8146#0" />
+                <element signature="e#8178#8204#0" />
+                <element signature="e#8210#9603#0" />
+                <element signature="e#9609#10993#0" />
+                <element signature="e#10999#11506#0" />
+                <element signature="e#11512#11761#0" />
+                <element signature="e#11767#12064#0" />
+                <element signature="e#12105#12130#0" />
+                <element signature="e#12136#13286#0" />
+                <element signature="e#13292#14397#0" />
+                <element signature="e#14403#14915#0" />
+                <element signature="e#14922#15148#0" />
+                <element signature="e#15154#15451#0" />
+                <element signature="e#15490#15827#0" />
+                <element signature="e#15832#16123#0" />
+                <element signature="e#16128#16438#0" />
+                <element signature="e#16444#17584#0" />
+                <element signature="e#17589#18577#0" />
+                <element signature="e#17928#17966#0" />
+                <element signature="e#18742#18780#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fragment.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.0.0/1a71cf8b3d2fda04f8b996dd93835bbc66b2dfb8/support-fragment-26.0.0-sources.jar!/android/support/v4/app/Fragment.java">
+      <file leaf-file-name="AddCreditCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="2336" selection-start-line="2336" selection-end-line="2336" />
+            <state relative-caret-position="2924">
+              <caret line="193" column="9" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java">
+      <file leaf-file-name="AddAccountDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1183">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="2244">
+              <caret line="150" selection-start-line="150" selection-end-line="157" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,32 +183,60 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>red</find>
-      <find>R.id</find>
-      <find>Forg</find>
-      <find>sig</find>
-      <find>db</find>
-      <find>Suce</find>
-      <find>TABLE_NAME</find>
-      <find>tblUser</find>
-      <find>TBLUser</find>
-      <find>user</find>
-      <find>onCreateV</find>
       <find>frag</find>
       <find>tool</find>
       <find>toolbar</find>
       <find>g</find>
       <find>FragmentManager</find>
       <find>Toast</find>
+      <find>final</find>
+      <find>Applica</find>
+      <find>onCreate</find>
+      <find>insert</find>
+      <find>FirstName</find>
+      <find>InternetTV</find>
+      <find>chec</find>
+      <find>getP</find>
+      <find>UID</find>
+      <find>PaymentMethod</find>
+      <find>pmMethod</find>
+      <find>Payment</find>
+      <find>pm</find>
+      <find>MainScreen</find>
+      <find>update</find>
+      <find>chkAutoPayment</find>
+      <find>title</find>
+      <find>cb</find>
+      <find>cbAdapter</find>
+      <find>pd</find>
+      <find>addMockData</find>
+      <find>login</find>
+      <find>LENGTH_SHORT</find>
+      <find>name</find>
     </findStrings>
     <replaceStrings>
       <replace>TBLUser</replace>
+      <replace>AddOrganizations</replace>
+      <replace>Water</replace>
+      <replace>CB_OrgID</replace>
+      <replace>Organization</replace>
+      <replace>org</replace>
+      <replace>CurrentBills</replace>
+      <replace>CurrentBillsList</replace>
+      <replace>pbList</replace>
+      <replace>pbAdapter</replace>
+      <replace>PaidBills</replace>
+      <replace>pb</replace>
+      <replace>PaidBillsList</replace>
+      <replace>Paid</replace>
+      <replace>LENGTH_LONG</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -2535,49 +2517,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_send.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/testfragement.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/mainscreen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_payment_method.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mainscreen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/login_page.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_back.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_payment_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentDetails.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainScreen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quick_setup.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_quick_setup.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_payment_method_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_organization_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/Organization.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adptor_view_org_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/NotificationSettings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_notification_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddVenmo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainScreen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/OrganizationListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddInternet.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddWater.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddOrganizations.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/NotificationChannel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_payment_history.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistoryAdaptor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adptor_view_ph_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistoryList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_paid_bills_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adptor_view_bpl_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/CurrentBillsList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBills.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsListAdaptor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adptor_view_pbl_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_current_bills_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_quick_setup.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/login_page.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/OrganizationList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentMethodList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adptor_view_cbl_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/CurrentBillsListAdaptor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2873" />
-    <option name="y" value="6" />
-    <option name="width" value="974" />
-    <option name="height" value="1164" />
+    <option name="x" value="386" />
+    <option name="width" value="684" />
+    <option name="height" value="584" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -2587,7 +2584,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2615,7 +2611,19 @@
               <item name="EzPay" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="EzPay" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="EzPay" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="EzPay" type="1abcf292:AndroidViewProjectNode" />
@@ -2625,23 +2633,84 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/example/arpan/ezpay" type="cbb8eebc:String" user="com/example/arpan/ezpay" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="EzPay" type="cbb8eebc:String" user="EzPay" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="EzPay" type="cbb8eebc:String" user="EzPay" />
+              <item name="EzPay" type="cbb8eebc:String" user="EzPay" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../Sdk" />
-    <property name="device.picker.selection" value="LGH9106a9da901" />
+    <property name="device.picker.selection" value="Nexus_6P_API_28" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidMaterialDesignToolbar-master/AndroidMaterialDesignToolbar-master" />
+    <property name="last_opened_file_path" value="F:/AndroidNotificationChannel2" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.example.arpan.ezpay" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.arpan.ezpay" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Android\AndroidStudioProjects\EzPay\app\src\main\res\layout" />
       <recent name="D:\Android\AndroidStudioProjects\EzPay\app\src\main\java\com\example\arpan\ezpay" />
+      <recent name="D:\Android\AndroidStudioProjects\EzPay\app\src\main\res\anim" />
       <recent name="D:\Android\AndroidStudioProjects\EzPay\app\src\main\res\drawable" />
     </key>
   </component>
@@ -2768,79 +2837,52 @@
       <option name="presentableId" value="Default" />
       <updated>1542228096339</updated>
     </task>
+    <task id="LOCAL-00001" summary="content main added">
+      <created>1542614570860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542614570860</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="7" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.39943075" />
-      <window_info anchor="right" id="Preview" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32827324" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32922202" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.32922202" />
-      <window_info anchor="bottom" id="Logcat" order="7" />
-      <window_info id="Captures" order="2" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32827324" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32922202" />
+      <window_info anchor="bottom" id="Logcat" order="10" />
+      <window_info id="Captures" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16257995" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4978678" weight="0.24667932" />
-      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15167785" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4978678" weight="0.2472067" />
+      <window_info anchor="right" id="Gradle" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4968017" visible="true" weight="0.39943075" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Assistant" order="3" weight="0.32948717" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32907802" />
+      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4968017" weight="0.34217876" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Assistant" order="7" weight="0.32948717" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.42684564" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.33111954" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3308351" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" anchor="bottom" id="Build" order="8" visible="true" weight="0.24680851" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Captures" order="6" weight="0.25" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
-      <window_info anchor="right" id="Assistant" order="6" weight="0.32948717" />
-      <window_info anchor="bottom" id="Logcat" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="right" id="Gradle" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1431479" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2853,104 +2895,207 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java</url>
+          <line>63</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java</url>
+          <line>130</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java</url>
+          <line>141</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java</url>
+          <line>152</line>
           <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java</url>
+          <line>163</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java</url>
-          <line>28</line>
-          <properties class="com.example.arpan.ezpay.QuickSetup" method="onCreateView">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java</url>
+          <line>223</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainTest.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddWater.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsList.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsList.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBills.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java</url>
+          <line>410</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java</url>
+          <line>358</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsList.java</url>
+          <line>27</line>
+          <properties field="TAG" class="com.example.arpan.ezpay.PaidBillsList" />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="64" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="e" language="JAVA" />
+        <watch expression="e" language="JAVA" />
+        <watch expression="e.toString()" language="JAVA" />
+        <watch expression="data.getCount()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>data.getCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_camera.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="799">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_gallery.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="357">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_send.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state />
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -2958,254 +3103,204 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddWater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/testfragement.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mainscreen.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_payment_method.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mainscreen.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/emulator-5554/data/data/com.example.arpan.ezpay/databases/tblUser">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/signup_page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Sdk/sources/android-26/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2855" selection-start-line="2855" selection-end-line="2855" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_pay_pal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_venmo.xml">
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_back.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3179">
-          <caret line="187" column="34" selection-end-line="189" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="294">
+          <caret line="126" column="37" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1067#1444#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_payment_details.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/NotificationChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="408">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/NotificationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistoryAdaptor.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistoryList.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_payment_history.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adptor_view_ph_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentHistory.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_notification_channel.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_paid_bills_list.xml">
       <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.0.0/1a71cf8b3d2fda04f8b996dd93835bbc66b2dfb8/support-fragment-26.0.0-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsListAdaptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/CurrentBills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adptor_view_pbl_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_electricity.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quick_setup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="44" selection-end-line="58" selection-end-column="46" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_test.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup_page.xml">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_page.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1068">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_quick_setup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Sdk/sources/android-26/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.0.0/1a71cf8b3d2fda04f8b996dd93835bbc66b2dfb8/support-fragment-26.0.0-sources.jar!/android/support/v4/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="2230" selection-start-line="2230" selection-end-line="2230" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/login_page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="85" column="37" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="37" />
+        <state relative-caret-position="-23">
+          <caret line="67" column="139" selection-start-line="67" selection-start-column="139" selection-end-line="67" selection-end-column="139" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddElectricity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.0.0/1a71cf8b3d2fda04f8b996dd93835bbc66b2dfb8/support-fragment-26.0.0-sources.jar!/android/support/v4/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="2336" selection-start-line="2336" selection-end-line="2336" />
+        <state relative-caret-position="-1007">
+          <caret line="66" column="124" selection-start-line="66" selection-start-column="124" selection-end-line="66" selection-end-column="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Sdk/sources/android-26/android/view/View.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddInternet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="6276" selection-start-line="6276" selection-end-line="6276" />
+        <state relative-caret-position="354">
+          <caret line="57" column="75" selection-start-line="57" selection-start-column="75" selection-end-line="57" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddOrganizations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1183">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="354">
+          <caret line="88" column="5" selection-start-line="79" selection-start-column="123" selection-end-line="88" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPayPal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3214,126 +3309,225 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddPaymentMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="49" column="11" selection-start-line="38" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
+        <state relative-caret-position="92">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1473#1877#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1929#2287#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_payment_method.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaidBillsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="121" column="63" selection-start-line="121" selection-start-column="63" selection-end-line="121" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1919#2000#0" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/OrganizationList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="63" column="104" selection-start-line="58" selection-start-column="10" selection-end-line="65" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/PaymentMethodList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+          <folding>
+            <element signature="e#2369#2716#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adptor_view_cbl_layout.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/QuickSetup.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_current_bills_list.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/CurrentBillsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="250">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#982#1302#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="docComment;class#CurrentBillsList#0" />
+            <element signature="method#onCreateView#0;class#CurrentBillsList#0" />
+            <element signature="e#1664#1735#0" />
+            <element signature="e#2107#2188#0" />
+            <element signature="method#addMockData#0;class#CurrentBillsList#0" />
+            <element signature="method#populateListView#0;class#CurrentBillsList#0" />
+            <element signature="e#7900#7901#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="true" />
+            <element signature="docComment;method#toastMessage#0;class#CurrentBillsList#0" />
+            <element signature="method#toastMessage#0;class#CurrentBillsList#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/CurrentBillsListAdaptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-221">
+          <caret line="144" column="74" selection-start-line="144" selection-start-column="74" selection-end-line="144" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_credit_card.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="38" lean-forward="true" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="128" column="50" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="366" lean-forward="true" selection-start-line="366" selection-end-line="366" />
-          <folding>
-            <element signature="e#318#342#0" />
-            <element signature="e#526#541#0" />
-            <element signature="e#828#854#0" />
-            <element signature="e#1206#1241#0" />
-            <element signature="e#2023#2057#0" />
-            <element signature="e#2640#2675#0" />
-            <element signature="e#3310#3330#0" />
-            <element signature="e#3310#3459#0" />
-            <element signature="e#3493#3508#0" />
-            <element signature="e#3493#4122#0" />
-            <element signature="e#4128#4326#0" />
-            <element signature="e#4356#4377#0" />
-            <element signature="e#4356#4693#0" />
-            <element signature="e#4698#5129#0" />
-            <element signature="e#5134#5516#0" />
-            <element signature="e#5522#5919#0" />
-            <element signature="e#5954#5971#0" />
-            <element signature="e#5954#6728#0" />
-            <element signature="e#6734#7558#0" />
-            <element signature="e#6937#6975#0" />
-            <element signature="e#7564#7774#0" />
-            <element signature="e#7806#7832#0" />
-            <element signature="e#7838#9160#0" />
-            <element signature="e#9166#10550#0" />
-            <element signature="e#10556#11063#0" />
-            <element signature="e#11069#11297#0" />
-            <element signature="e#11303#11600#0" />
-            <element signature="e#11641#11666#0" />
-            <element signature="e#11672#12715#0" />
-            <element signature="e#12721#13826#0" />
-            <element signature="e#13832#14344#0" />
-            <element signature="e#14351#14577#0" />
-            <element signature="e#14583#14880#0" />
-            <element signature="e#14919#14937#0" />
-            <element signature="e#14919#15164#0" />
-            <element signature="e#15169#15460#0" />
-            <element signature="e#15465#15744#0" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddAccountDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="2244">
+          <caret line="150" selection-start-line="150" selection-end-line="157" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1646#2809#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-            <element signature="e#2870#4031#0" expanded="true" />
-            <element signature="e#4030#4031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_account_details.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/AddCreditCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="193" column="9" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_history_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="449" column="9" selection-start-line="449" selection-start-column="9" selection-end-line="449" selection-end-column="9" />
+          <folding>
+            <element signature="e#914#940#0" />
+            <element signature="e#1292#1327#0" />
+            <element signature="e#2163#2197#0" />
+            <element signature="e#2865#2900#0" />
+            <element signature="e#3588#3608#0" />
+            <element signature="e#3588#3737#0" />
+            <element signature="e#3771#3786#0" />
+            <element signature="e#3771#4400#0" />
+            <element signature="e#4406#4604#0" />
+            <element signature="e#4634#4962#0" />
+            <element signature="e#4967#5428#0" />
+            <element signature="e#5433#5853#0" />
+            <element signature="e#5859#6268#0" />
+            <element signature="e#6303#6320#0" />
+            <element signature="e#6303#7100#0" />
+            <element signature="e#7106#7930#0" />
+            <element signature="e#7309#7347#0" />
+            <element signature="e#7936#8146#0" />
+            <element signature="e#8178#8204#0" />
+            <element signature="e#8210#9603#0" />
+            <element signature="e#9609#10993#0" />
+            <element signature="e#10999#11506#0" />
+            <element signature="e#11512#11761#0" />
+            <element signature="e#11767#12064#0" />
+            <element signature="e#12105#12130#0" />
+            <element signature="e#12136#13286#0" />
+            <element signature="e#13292#14397#0" />
+            <element signature="e#14403#14915#0" />
+            <element signature="e#14922#15148#0" />
+            <element signature="e#15154#15451#0" />
+            <element signature="e#15490#15827#0" />
+            <element signature="e#15832#16123#0" />
+            <element signature="e#16128#16438#0" />
+            <element signature="e#16444#17584#0" />
+            <element signature="e#17589#18577#0" />
+            <element signature="e#17928#17966#0" />
+            <element signature="e#18742#18780#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/arpan/ezpay/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

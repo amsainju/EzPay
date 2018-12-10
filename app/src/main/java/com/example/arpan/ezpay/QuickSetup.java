@@ -19,8 +19,9 @@ import java.nio.charset.MalformedInputException;
 public class QuickSetup extends Fragment  {
 
     private Button btnNext;
-
+    //DatabaseHelper databaseHelper;
     public QuickSetup() {
+        //addMockData();
         // Required empty public constructor
     }
 
@@ -30,6 +31,10 @@ public class QuickSetup extends Fragment  {
                              Bundle savedInstanceState) {
 
         getActivity().setTitle("Quick Setup");
+        MainActivity.chkAddOrganization=true;
+        MainActivity.chkPaymentMethod=true;
+        MainActivity.chkListPaymentMethod=false;
+        MainActivity.chkListAddOrganization=false;
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_quick_setup, container, false);
         //Intialization Button
@@ -48,6 +53,8 @@ public class QuickSetup extends Fragment  {
         });
     return view;
     }
+
+
 
 
 }

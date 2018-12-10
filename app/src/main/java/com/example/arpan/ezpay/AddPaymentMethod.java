@@ -45,6 +45,22 @@ public class AddPaymentMethod extends Fragment {
                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddAccountDetails()).addToBackStack(null).commit();
                     // do something
                 }
+                else if(MainActivity.chkBoxCreditCard.isChecked()){
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddCreditCard()).addToBackStack(null).commit();
+                // do something
+                }
+                else if(MainActivity.chkBoxPaypal.isChecked()){
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddPayPal()).addToBackStack(null).commit();
+                // do something
+                }
+                else if(MainActivity.chkBoxVenmo.isChecked()){
+                     MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddVenmo()).addToBackStack(null).commit();
+                // do something
+                }
+                else{
+                    //MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddOrganizations()).addToBackStack(null).commit();
+
+                 }
 
             }
         });
@@ -54,9 +70,21 @@ public class AddPaymentMethod extends Fragment {
             @Override
             public void onClick(View v)
             {
+                MainActivity.chkBoxBank.setChecked(false);
+                MainActivity.chkBoxCreditCard.setChecked(false);
+                MainActivity.chkBoxPaypal.setChecked(false);
+                MainActivity.chkBoxVenmo.setChecked(false);
+                if(MainActivity.chkAddOrganization) {
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new AddOrganizations()).addToBackStack(null).commit();
+                }
+                else if(MainActivity.chkListPaymentMethod){
+                    MainActivity.chkListPaymentMethod =false;
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new PaymentMethodList()).addToBackStack(null).commit();
+                }
+                else{
+                    MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new CurrentBillsList()).addToBackStack(null).commit();
 
-                    //MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddOrganizationDetails()).addToBackStack(null).commit();
-                    // do something
+                }
              }
         });
         return view;

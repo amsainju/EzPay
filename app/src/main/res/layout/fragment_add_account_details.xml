@@ -27,7 +27,7 @@
             android:inputType="textPersonName"
             android:textColor="@color/lblColor"
             android:textColorHint="@color/lblColor"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:typeface="sans" />
     </android.support.design.widget.TextInputLayout>
 
@@ -52,7 +52,7 @@
             android:inputType="number"
             android:textColor="@color/lblColor"
             android:textColorHint="@color/lblColor"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:typeface="sans" />
     </android.support.design.widget.TextInputLayout>
 
@@ -77,7 +77,7 @@
             android:inputType="number"
             android:textColor="@color/lblColor"
             android:textColorHint="@color/lblColor"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:typeface="sans" />
     </android.support.design.widget.TextInputLayout>
 
@@ -98,7 +98,7 @@
             android:inputType="textCapSentences"
             android:textColor="@color/lblColor"
             android:textColorHint="@color/lblColor"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:typeface="sans" />
     </android.support.design.widget.TextInputLayout>
 

@@ -34,7 +34,6 @@ public class login_page extends AppCompatActivity {
 
         //openHelper=new DatabaseHelper(this);
         databaseHelper=new DatabaseHelper(this);
-        //db = openHelper.getReadableDatabase();
         db = databaseHelper.getReadableDatabase();
         _txtEmail=(EditText)findViewById(R.id.txtEmail);
         _txtPass=(EditText)findViewById(R.id.txtPassword);
@@ -66,7 +65,7 @@ public class login_page extends AppCompatActivity {
                     if (!cursor.moveToFirst())
                     {
                         cursor.close();
-                        Toast.makeText(v.getContext(), "User not registered!! Please click sign up button to register.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(v.getContext(), "User not registered!! Please click sign up button to register.", Toast.LENGTH_LONG).show();
                     }
                     else
                     {
@@ -83,20 +82,20 @@ public class login_page extends AppCompatActivity {
 
 
                                 cursor.moveToNext();
-                                Toast.makeText(v.getContext(), "Login Success", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), "Login Success", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(v.getContext(),MainActivity.class);
                                 finish();
                                 startActivityForResult(intent,0);
 
                             } else {
-                                Toast.makeText(v.getContext(), "Login error", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), "Login error: UserEmail or Password Mismatch!!", Toast.LENGTH_LONG).show();
                             }
                         }
                     }
                 }
                 else
                 {
-                    Toast.makeText(v.getContext(), "Login error: UserEmail or Password Mismatch!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), "Login error: UserEmail or Password Mismatch!!", Toast.LENGTH_LONG).show();
                 }
 
             }
